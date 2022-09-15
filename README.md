@@ -12,9 +12,22 @@ Here goes the objectives of the project
 Features of the platform
 
 ## Tools and Techniques
-- technique 1
-- tool 2
+Frontend: React.js https://reactjs.org/ <br />
+StyleSheet Software : CSS<br />
+Backend : Express.js https://expressjs.com/ <br />
+Project Base : Node.js https://nodejs.org/en/ <br />
+Database : DynamoDB https://aws.amazon.com/dynamodb/ <br />
+Build System : Turborepo https://turborepo.org/ <br />
 
 ## Team members
-- Ahmed Rebei @ahmedrebei
-- person @person
+
+| Name                     |      GitHub id   |                         Email |
+| :----------------------- | :--------------: | ----------------------------: |
+|              |     |       |
+|             |    |              |
+|            |     |  |
+| Diana Alexandra Merlusca |    dianaoana1    |   dianamerlusca2001@gmail.com |
+| Matthew Beaulieu         | MatthewBeaulieu0 | matthew.beaulieu631@gmail.com |
+|                |          |       |
+|             |        |            |
+|          |     |          |
