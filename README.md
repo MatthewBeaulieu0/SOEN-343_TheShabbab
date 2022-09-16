@@ -26,6 +26,7 @@ Build System : Turborepo https://turborepo.org/ <br />
 |              |     |       |
 |             |    |              |
 |            |     |  |
+|    Jonathan Haddad            |  jonathan-githubofficial    |    jonathan200023@gmail.com   |
 | Diana Alexandra Merlusca |    dianaoana1    |   dianamerlusca2001@gmail.com |
 | Matthew Beaulieu         | MatthewBeaulieu0 | matthew.beaulieu631@gmail.com |
 |    Agnes Croteau            |   AgnesCroteau      |    agnes.croteau@gmail.com   |
