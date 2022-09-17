@@ -33,3 +33,4 @@ Build System : Turborepo https://turborepo.org/ <br />
 |    Bogdan Podariu         |   Bogdanpoda     |    podariubogdan1@gmail.com        |
 |    Nadia Beauregard      |   nadiaaab       |      nadiabeauu@gmail.com    |
 |    Alexandra Spyridakos |    aspyridakos      | aspyridakos@gmail.com      |
+|    Cédric Michaud         |  cemichaud       | michaud.cedric18@gmail.com
