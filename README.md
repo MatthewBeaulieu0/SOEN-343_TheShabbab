@@ -32,4 +32,4 @@ Build System : Turborepo https://turborepo.org/ <br />
 |    Agnes Croteau            |   AgnesCroteau      |    agnes.croteau@gmail.com   |
 |    Bogdan Podariu         |   Bogdanpoda     |    podariubogdan1@gmail.com        |
 |    Nadia Beauregard      |   nadiaaab       |      nadiabeauu@gmail.com    |
-|                |                            |       |
+|    Alexandra Spyridakos |    aspyridakos      | aspyridakos@gmail.com      |
