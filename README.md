@@ -31,4 +31,5 @@ Build System : Turborepo https://turborepo.org/ <br />
 | Matthew Beaulieu         | MatthewBeaulieu0 | matthew.beaulieu631@gmail.com |
 |    Agnes Croteau            |   AgnesCroteau      |    agnes.croteau@gmail.com   |
 |    Bogdan Podariu         |   Bogdanpoda     |    podariubogdan1@gmail.com        |
-|          |     |          |
+|    Nadia Beauregard      |   nadiaaab       |      nadiabeauu@gmail.com    |
+|                |                            |       |
