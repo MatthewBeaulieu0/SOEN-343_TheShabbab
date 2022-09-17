@@ -3,7 +3,7 @@ The best team to ever do it
 # SOEN343_template
 
 ## Project Description
-Creating an E-learning platform
+Creating a community services platform.
 
 ## Objective
 Here goes the objectives of the project
