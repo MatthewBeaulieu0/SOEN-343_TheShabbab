@@ -23,9 +23,7 @@ Build System : Turborepo https://turborepo.org/ <br />
 
 | Name                     |      GitHub id   |                         Email |
 | :----------------------- | :--------------: | ----------------------------: |
-|              |     |       |
-|             |    |              |
-|            |     |  |
+|          Youssef Morcos |     |  |
 |    Jonathan Haddad            |  jonathan-githubofficial    |    jonathan200023@gmail.com   |
 | Diana Alexandra Merlusca |    dianaoana1    |   dianamerlusca2001@gmail.com |
 | Matthew Beaulieu         | MatthewBeaulieu0 | matthew.beaulieu631@gmail.com |
