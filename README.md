@@ -1,6 +1,6 @@
 # SOEN-343_TheShabbab
-The best team to ever do it
-# SOEN343_template
+Making a community service platform for the Shabab
+# SOEN343_Project
 
 ## Project Description
 Creating a community services platform.
@@ -12,9 +12,8 @@ Here goes the objectives of the project
 Features of the platform
 
 ## Tools and Techniques
-Frontend: React.js https://reactjs.org/ <br />
+Frontend/Backend: Next.js https://nextjs.org/ <br />
 StyleSheet Software : CSS<br />
-Backend : Express.js https://expressjs.com/ <br />
 Project Base : Node.js https://nodejs.org/en/ <br />
 Database : DynamoDB https://aws.amazon.com/dynamodb/ <br />
 Build System : Turborepo https://turborepo.org/ <br />
