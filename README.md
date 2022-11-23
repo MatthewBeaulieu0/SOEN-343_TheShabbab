@@ -1,17 +1,21 @@
-#SOEN-343_TheShabbab
+## SOEN-343_TheShabbab
 Making a community service platform for the Shabab
 
-#SOEN343_Project
+## SOEN343_Project
 Project Description
 Creating a community services platform.
 
-#Objective
+## Objective
 Here goes the objectives of the project
 
-#features
+## Features
 Features of the platform
 
-#Team members
+## Tools and Techniques
+Mock-up : Figma https://www.figma.com/
+Coding the Use Case : Java Swing
+
+## Team members
 | Name                     |      GitHub id   |                         Email |
 | :----------------------- | :--------------: | ----------------------------: |
 Youssef Morcos|	YoussefMorcos|	youssef_samir@live.com
