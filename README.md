@@ -12,7 +12,8 @@ Here goes the objectives of the project
 Features of the platform
 
 #Team members
-Name|	GitHub id|	Email
+| Name                     |      GitHub id   |                         Email |
+| :----------------------- | :--------------: | ----------------------------: |
 Youssef Morcos|	YoussefMorcos|	youssef_samir@live.com
 Jonathan Haddad|	jonathan-githubofficial|	jonathan200023@gmail.com
 Diana Alexandra Merlusca|	dianaoana1|	dianamerlusca2001@gmail.com
