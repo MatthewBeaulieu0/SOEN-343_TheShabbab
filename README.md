@@ -12,7 +12,7 @@ Here goes the objectives of the project
 Features of the platform
 
 ## Tools and Techniques
-Mock-up : Figma https://www.figma.com/
+Mock-up : Figma https://www.figma.com/ <br/>
 Coding the Use Case : Java Swing
 
 ## Team members
