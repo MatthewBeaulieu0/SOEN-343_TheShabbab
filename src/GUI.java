@@ -12,6 +12,7 @@ public class GUI implements ActionListener {
     private static JPasswordField confirmationText;
     private static JButton confirmationButton;
     private static JLabel  successLabel;
+    private static EmailSystem emailSystem=new EmailSystem();
 public static void main(String[] args){
     JPanel panel=new JPanel();
     panel.setLayout(null);
@@ -61,6 +62,6 @@ public static void main(String[] args){
         //Example of how you get the text in a box
         String email= emailText.getText();
         // Could use information expert here to handle all the information and maybe create a facade?
-        
+        emailSystem.sendEmail();
     }
 }
