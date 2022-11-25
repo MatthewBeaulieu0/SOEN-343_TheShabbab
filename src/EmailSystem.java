@@ -12,15 +12,20 @@ import javax.mail.internet.MimeMessage;
 import javax.activation.DataHandler;
 
 
-
 public class EmailSystem {
+    /*
+    Early Initialization of the singleton class Email System
+     */
+    private static EmailSystem instance = new EmailSystem();
 
-    
-    public EmailSystem(){
-
+    private EmailSystem() {
     }
 
-    public void sendEmail(){
+    public static EmailSystem getInstance() {
+        return instance;
+    }
+
+    public void sendEmail() {
         // Recipient's email ID needs to be mentioned.
         String to = "matthew.beaulieu631@gmail.com";
 
@@ -44,7 +49,7 @@ public class EmailSystem {
 
             protected PasswordAuthentication getPasswordAuthentication() {
 
-                return new PasswordAuthentication("bogdanpoda12@gmail.com", "123456789");
+                return new PasswordAuthentication("bogdanpoda12@gmail.com", "123456");
 
             }
 
@@ -64,10 +69,12 @@ public class EmailSystem {
             message.addRecipient(Message.RecipientType.TO, new InternetAddress(to));
 
             // Set Subject: header field
-            message.setSubject("Salut mon chummy!!");
+            message.setSubject("Registration to the Shabab Community");
 
             // Now set the actual message
-            message.setText("Ecoute big c'est JouStamina!");
+            message.setText("Welcome to the Shabab Community \nYou are now able to login to your account and register for the activities you would like" +
+                    "\nHave Fun" +
+                    "\n-The Shabab");
 
             System.out.println("sending...");
             // Send message
@@ -78,8 +85,7 @@ public class EmailSystem {
         }
 
 
-
     }
 
-    
+
 }
