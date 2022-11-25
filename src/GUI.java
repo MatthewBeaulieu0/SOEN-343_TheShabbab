@@ -62,6 +62,9 @@ public static void main(String[] args){
         //Example of how you get the text in a box
         String email= emailText.getText();
         // Could use information expert here to handle all the information and maybe create a facade?
-        emailSystem.sendEmail();
+        boolean good=false;
+        if(good) {
+            emailSystem.sendEmail();
+        }
     }
 }
