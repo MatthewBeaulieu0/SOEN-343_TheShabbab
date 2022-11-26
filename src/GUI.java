@@ -13,6 +13,7 @@ public class GUI implements ActionListener {
     private static JButton confirmationButton;
     private static JLabel successLabel;
     private static EmailSystem emailSystem = EmailSystem.getInstance();
+    private static CSVSystem csvSystem= CSVSystem.getInstance();
 
     public static void main(String[] args) {
         JPanel panel = new JPanel();
@@ -66,6 +67,9 @@ public class GUI implements ActionListener {
         boolean good = false;
         if (good) {
             emailSystem.sendEmail();
+        }
+        if( csvSystem.verifyEmail("email@gmail.com")) {
+           System.out.println("Match");
         }
     }
 }
