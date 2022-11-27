@@ -1,4 +1,5 @@
 import javax.swing.*;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -15,7 +16,7 @@ public class GUI implements ActionListener {
     private static JTextField locationText;
     private static JLabel successLabel;
     private static EmailSystem emailSystem = EmailSystem.getInstance();
-    private static CSVSystem csvSystem= CSVSystem.getInstance();
+    private static CSVSystem csvSystem = CSVSystem.getInstance();
 
     public static void main(String[] args) {
         JPanel panel = new JPanel();
@@ -51,7 +52,9 @@ public class GUI implements ActionListener {
         confirmationButton.addActionListener(new GUI());
         //Adding a success label that will eventually appear if a user registers
         successLabel = new JLabel("");
-        successLabel.setBounds(10, 170, 300, 25);
+        successLabel.setBounds(90, 170, 300, 25);
+        successLabel.setForeground(new Color(17, 100, 27));
+        successLabel.setHorizontalTextPosition(JLabel.CENTER);
         //Adding all the different elements to the panel
 
         panel.add(emailLabel);
@@ -73,34 +76,23 @@ public class GUI implements ActionListener {
         //Example of how you get the text in a box
         String email = emailText.getText();
         String password = passwordText.getText();
-        String confirm =  confirmationText.getText();
+        String confirm = confirmationText.getText();
         String location = locationText.getText();
-        boolean displaySuccess = true;
 
         // Could use information expert here to handle all the information and maybe create a facade?
 
-        Member aMember = null;
         try {
-            aMember= new Member(email,password,confirm,location);
+            new Member(email, password, confirm, location);
+            //emailSystem.sendEmail(email);
+            successLabel.setText("You have joined the Shabab");
+
+
         } catch (Exception ex) {
             System.out.println(ex.getMessage());
-            displaySuccess = false;
-        }
-
-        if(displaySuccess){
-            try {
-                csvSystem.writeMember(aMember);
-                emailSystem.sendEmail(email);
-
-            } catch (Exception ex) {
-                ex.printStackTrace();
-            }
         }
 
 
     }
-
-
 
 
 }

@@ -1,5 +1,10 @@
+import java.util.Locale;
 
-
+/**
+ * The class member is the information expert for the GUI class since it
+ * has all the functions for the CSVSystem and also takes care of the typing of
+ * members
+ */
 public class Member {
 
     private CSVSystem database = CSVSystem.getInstance();
@@ -7,29 +12,35 @@ public class Member {
     private String password;
     private String location;
 
-    public Member(String emailParam, String passwordParam, String confirmPassword, String locationParam) throws Exception{
+    public Member(String emailParam, String passwordParam, String confirmPassword, String locationParam) throws Exception {
 
-        if(database.verifyEmail(emailParam)){
+        if (database.verifyEmail(emailParam)) {
             throw new Exception("Error: Email already registered!");
         }
-        if(!database.checkLocation("\""+locationParam+"\"")){
-            throw  new Exception("Error: location not valid");
+        if (checkLocation(locationParam)) {
+            throw new Exception("Error: location not valid");
         }
-        if(!checkPassword(passwordParam,confirmPassword)){
-            throw  new Exception("Error: location not valid");
+        if (!checkPassword(passwordParam, confirmPassword)) {
+            throw new Exception("Error: Password not valid");
         }
 
-
-        email=emailParam;
-        password=passwordParam;
-        location=locationParam;
-
-
-
+        this.email = emailParam;
+        this.password = passwordParam;
+        this.location = locationParam;
+        database.writeMember(this);
     }
 
-    private boolean checkPassword(String pass, String confirmPass){
+    private boolean checkPassword(String pass, String confirmPass) {
         return pass.equals(confirmPass);
+    }
+
+    private boolean checkLocation(String location) {
+        System.out.print(location);
+        if ("MTL".equals(location.toUpperCase(Locale.ROOT)) || "LAVAL".equalsIgnoreCase(location.toUpperCase(Locale.ROOT))) {
+            return false;
+        } else {
+            return true;
+        }
     }
 
     public String getEmail() {
