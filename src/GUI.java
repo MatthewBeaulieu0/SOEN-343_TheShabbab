@@ -22,7 +22,7 @@ public class GUI implements ActionListener {
         panel.setLayout(null);
 
         JFrame frame = new JFrame();
-        frame.setSize(350, 300);
+        frame.setSize(350, 230);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.add(panel);
         // Setting the Email labels and text fields
