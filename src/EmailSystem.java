@@ -25,9 +25,9 @@ public class EmailSystem {
         return instance;
     }
 
-    public void sendEmail() {
+    public void sendEmail(String email) {
         // Recipient's email ID needs to be mentioned.
-        String to = "matthew.beaulieu631@gmail.com";
+        String to = email;
 
         // Sender's email ID needs to be mentioned
         String from = "bogdanpoda12@gmail.com";
@@ -49,7 +49,7 @@ public class EmailSystem {
 
             protected PasswordAuthentication getPasswordAuthentication() {
 
-                return new PasswordAuthentication("bogdanpoda12@gmail.com", "123456");
+                return new PasswordAuthentication("bogdanpoda12@gmail.com", "1234");
 
             }
 

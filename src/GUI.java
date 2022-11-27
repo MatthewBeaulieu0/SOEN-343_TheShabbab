@@ -11,6 +11,8 @@ public class GUI implements ActionListener {
     private static JLabel confirmationLabel;
     private static JPasswordField confirmationText;
     private static JButton confirmationButton;
+    private static JLabel locationLabel;
+    private static JTextField locationText;
     private static JLabel successLabel;
     private static EmailSystem emailSystem = EmailSystem.getInstance();
     private static CSVSystem csvSystem= CSVSystem.getInstance();
@@ -20,7 +22,7 @@ public class GUI implements ActionListener {
         panel.setLayout(null);
 
         JFrame frame = new JFrame();
-        frame.setSize(350, 200);
+        frame.setSize(350, 300);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.add(panel);
         // Setting the Email labels and text fields
@@ -38,13 +40,18 @@ public class GUI implements ActionListener {
         confirmationLabel.setBounds(10, 80, 80, 25);
         confirmationText = new JPasswordField(20);
         confirmationText.setBounds(100, 80, 165, 25);
+        // location
+        locationLabel = new JLabel("Location");
+        locationLabel.setBounds(10, 110, 80, 25);
+        locationText = new JTextField(20);
+        locationText.setBounds(100, 110, 165, 25);
         //Adding a button to confirm
         confirmationButton = new JButton("Register");
-        confirmationButton.setBounds(125, 110, 100, 25);
+        confirmationButton.setBounds(125, 140, 100, 25);
         confirmationButton.addActionListener(new GUI());
         //Adding a success label that will eventually appear if a user registers
         successLabel = new JLabel("");
-        successLabel.setBounds(10, 140, 300, 25);
+        successLabel.setBounds(10, 170, 300, 25);
         //Adding all the different elements to the panel
 
         panel.add(emailLabel);
@@ -53,6 +60,8 @@ public class GUI implements ActionListener {
         panel.add(passwordText);
         panel.add(confirmationLabel);
         panel.add(confirmationText);
+        panel.add(locationLabel);
+        panel.add(locationText);
         panel.add(confirmationButton);
         panel.add(successLabel);
         frame.setVisible(true);
@@ -63,13 +72,35 @@ public class GUI implements ActionListener {
     public void actionPerformed(ActionEvent e) {
         //Example of how you get the text in a box
         String email = emailText.getText();
+        String password = passwordText.getText();
+        String confirm =  confirmationText.getText();
+        String location = locationText.getText();
+        boolean displaySuccess = true;
+
         // Could use information expert here to handle all the information and maybe create a facade?
-        boolean good = false;
-        if (good) {
-            emailSystem.sendEmail();
+
+        Member aMember = null;
+        try {
+            aMember= new Member(email,password,confirm,location);
+        } catch (Exception ex) {
+            System.out.println(ex.getMessage());
+            displaySuccess = false;
         }
-        if( csvSystem.verifyEmail("email@gmail.com")) {
-           System.out.println("Match");
+
+        if(displaySuccess){
+            try {
+                csvSystem.writeMember(aMember);
+                emailSystem.sendEmail(email);
+
+            } catch (Exception ex) {
+                ex.printStackTrace();
+            }
         }
+
+
     }
+
+
+
+
 }
