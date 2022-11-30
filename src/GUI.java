@@ -5,7 +5,7 @@ import java.awt.event.ActionListener;
 
 /**
  * This class is a controller and it calls the different classes such as Member to
- * effectuate all of it's different actions.
+ * accomplish all of it's different actions.
  */
 public class GUI implements ActionListener {
     // Could reformat this all most probably via poly and then add them to the panel with a for loop way more clean
