@@ -5,7 +5,10 @@ import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
 import java.util.Properties;
 
-
+/**
+ * This class is a singleton as it allows to not query the email system multiple times for the same
+ * request
+ */
 public class EmailSystem {
     /*
     Early Initialization of the singleton class Email System

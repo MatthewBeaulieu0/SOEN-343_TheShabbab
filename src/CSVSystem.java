@@ -5,7 +5,10 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 
-
+/**
+ * This class is a case of pure fabrication as it's only job is to handle the database
+ * it is also a singleton to avoid doing reads and write at the same time on the database
+ */
 public class CSVSystem {
 
 
